@@ -1,1 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+html, body {
+    height: 100%; /* Sayfanın %100 yüksekliğini ayarla */
+    margin: 0; /* Varsayılan margin’i kaldır */
+    display: flex; /* Flex ile sayfa içeriklerini merkezi konumlandır */
+    flex-direction: column; /* Dikey olarak yerleştir */
+    background-color: #e4e4e4; 
+    font-family: 'Times New Roman', Times, serif;
+  }

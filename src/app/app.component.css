@@ -1,0 +1,145 @@
+.flex-container {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  height: 100%; 
+  background-color: #e4e4e4; 
+  margin-top: 5vh;
+}
+
+.flex-item {
+  text-align: center; 
+  width: 100%; 
+  max-width: 800px; 
+  background-color: white; 
+  color: black; 
+  border-radius: 1rem; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  padding: 2rem; 
+  transition: all 0.8s ease; 
+}
+
+.input {
+  display: flex; 
+  background-color: #007bff; 
+  height: 10vh; 
+  margin: 1.5rem 0; 
+  border-radius: 0.7rem; 
+  align-items: center; 
+  padding: 0 1rem; 
+  transition: height 0.5s ease; 
+}
+
+.input.shrink {
+  transform: translateY(0px); 
+  opacity: 0.8; 
+  height: 7vh; 
+}
+
+input[type="text"] {
+  flex: 1; 
+  padding: 0.5rem; 
+  border: none; 
+  border-radius: 0.5rem; 
+  margin-right: 1rem; 
+  color: #000000; 
+  font-size: 1.2rem;
+  transition: font-size 0.3s ease, padding 0.3s ease;
+}
+
+.btn {
+  padding: 0.5rem 1rem; 
+  border: none; 
+  border-radius: 0.5rem; 
+  background-color: #0056b3; 
+  color: white; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
+  font-size: 2rem;
+}
+
+.btn:hover {
+  background-color: #004494; 
+}
+
+.results-container {
+  font-size: 18px; 
+  text-align: left; 
+  margin-top: 20px; 
+  opacity: 0; 
+  transform: translateY(20px); 
+  transition: opacity 0.5s ease, transform 0.5s ease; 
+}
+
+.results-container h3 {
+  font-size: 20px; 
+  margin: 10px 0; 
+}
+
+.results-container p {
+  font-size: 16px; 
+  margin: 5px 0; 
+}
+
+.results-container.show {
+  opacity: 1; 
+  transform: translateY(0); 
+}
+
+.titleColors{
+  color: #007bff;
+}
+
+/* Responsive ayarlar */
+@media (max-width: 768px) {
+  .input {
+    height: 8vh; 
+  }
+
+  .btn {
+    font-size: 1.5rem; 
+  }
+
+  .flex-item {
+    padding: 1.5rem; 
+  }
+
+  .results-container {
+    font-size: 16px; 
+  }
+
+  .results-container h3 {
+    font-size: 18px;
+  }
+
+  .results-container p {
+    font-size: 14px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .input {
+    height: 6vh; 
+  }
+
+  .btn {
+    
+    font-size: 0.3rem; 
+  }
+
+  .flex-item {
+    padding: 1rem; 
+  }
+
+  .results-container {
+    font-size: 14px;
+  }
+
+  .results-container h3 {
+    font-size: 16px;
+  }
+
+  .results-container p {
+    font-size: 12px; 
+  }
+}
